@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    background: #f0f4f1;
+    font-family: "Tajawal", sans-serif;
+}
+
+.app {
+    width: 420px;
+    height: 90vh;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 2px solid #0aa66e;
+}
+
+.header {
+    background: #0aa66e;
+    color: white;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header .logo {
+    width: 40px;
+}
+
+.chatbox {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.msg {
+    max-width: 80%;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    white-space: pre-line;
+    font-size: 15px;
+}
+
+.msg.bot {
+    background: #e7f6ef;
+    color: #000;
+    border-right: 4px solid #0aa66e;
+    text-align: left;
+}
+
+.msg.user {
+    background: #d1e7ff;
+    color: #000;
+    margin-left: auto;
+    border-left: 4px solid #0aa66e;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+}
+
+.mic-btn, .send-btn {
+    padding: 10px 15px;
+    background: #0aa66e;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.mic-btn { width: 55px; }
+.send-btn { width: 70px; }
+
+.action-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 10px;
+    background: #0aa66e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
